@@ -1,0 +1,59 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "btlqql/moon_bch"
+
+// Values
+pub fn bits_of_bytes(Array[Int]) -> Array[Int] raise BchError
+
+pub fn bytes_of_bits(Array[Int]) -> Array[Int] raise BchError
+
+pub fn crc32(Array[Int]) -> UInt
+
+pub fn protect(Array[Int], Int, Int) -> Array[Int] raise BchError
+
+pub fn recover(Array[Int]) -> Recovered raise BchError
+
+// Errors
+pub(all) suberror BchError {
+  InvalidParameters
+  InvalidBit(Int)
+  InvalidLength
+  Uncorrectable
+  InvalidFrame
+  ChecksumMismatch
+}
+
+// Types and methods
+pub struct Bch {
+  n : Int
+  k : Int
+  t : Int
+  m : Int
+  exp : Array[Int]
+  log : Array[Int]
+  generator : Array[Int]
+}
+pub fn Bch::capacity(Self) -> Int
+pub fn Bch::decode(Self, Array[Int]) -> Decoded raise BchError
+pub fn Bch::encode(Self, Array[Int]) -> Array[Int] raise BchError
+pub fn Bch::generator_bits(Self) -> Array[Int]
+pub fn Bch::length(Self) -> Int
+pub fn Bch::new(Int, Int, primitive? : Int) -> Self raise BchError
+pub fn Bch::parity_bits(Self) -> Int
+pub fn Bch::strength(Self) -> Int
+pub fn Bch::syndromes(Self, Array[Int]) -> Array[Int] raise BchError
+
+pub(all) struct Decoded {
+  message : Array[Int]
+  codeword : Array[Int]
+  corrected_positions : Array[Int]
+}
+
+pub(all) struct Recovered {
+  data : Array[Int]
+  corrected_bits : Int
+  corrected_blocks : Int
+}
+
+// Type aliases
+
+// Traits

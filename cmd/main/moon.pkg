@@ -1,0 +1,6 @@
+supported_targets = "js"
+import {
+  "btlqql/moon_bch" @bch,
+  "moonbitlang/core/env",
+}
+pkgtype(kind: "executable")
