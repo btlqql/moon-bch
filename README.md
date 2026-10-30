@@ -80,6 +80,7 @@ See [THIRD_PARTY.md](THIRD_PARTY.md). License: Apache-2.0.
 
 ## 项目申报书与发布
 
-- [Markdown 项目申报书](docs/proposal.md)
+- [完整Markdown项目申报书](docs/proposal.md)
+- [一页说明摘要](docs/proposal-summary.md)
 - [GitHub Release v0.1.0](https://github.com/btlqql/moon-bch/releases/tag/v0.1.0)
 - [MoonCakes 0.1.0](https://mooncakes.io/docs/btlqql/moon_bch@0.1.0)
