@@ -77,3 +77,9 @@ are copied where needed; mutation of a result cannot change the codec tables.
 Reference vector regeneration: install galois 0.4.11 separately, then run
 `python scripts/reference_vectors.py`. This is a development dependency only.
 See [THIRD_PARTY.md](THIRD_PARTY.md). License: Apache-2.0.
+
+## 项目申报书与发布
+
+- [Markdown 项目申报书](docs/proposal.md)
+- [GitHub Release v0.1.0](https://github.com/btlqql/moon-bch/releases/tag/v0.1.0)
+- [MoonCakes 0.1.0](https://mooncakes.io/docs/btlqql/moon_bch@0.1.0)
